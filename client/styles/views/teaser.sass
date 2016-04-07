@@ -1,0 +1,110 @@
+@import "../mixins"
+
+.teaser
+    background-color: #f1f5f7
+    
+    h2
+        font-weight: normal
+
+    h3
+        font-weight: normal
+        color: #9c9c9c
+    
+    .cover
+        background: url(https://cdn.siroop.ch/media/images/categories/header/fr020200.jpg) no-repeat center center
+        width: 100%
+        background-size: cover
+
+        &:before
+            content: ""
+            display: block
+            padding-top: 12%
+            height: 0
+
+        &:after
+            content: ""
+            display: block
+            padding-top: 24%
+            height: 0
+
+        nav
+            a
+                color: white
+
+        h1
+            font-size: 72px
+            color: white
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5)
+
+    .subtitle
+        font-size: 13px
+        font-weight: bold
+        text-transform: uppercase
+        color: #9C9C9C
+
+    .top
+        margin-top: -12%
+                
+    .category
+        +flexWrap(wrap)
+
+        .row
+            +flexAlignItems (center)
+            +flexJustifyContent (center)
+
+        .teaser-navigation
+            text-align: center
+
+        .products
+            +flexWrap(wrap)
+            width: 48%
+
+        figure
+            width: 48%
+            position: relative
+
+            figcaption
+                font-size: 28px
+                line-height: 32px
+                font-weight: bold
+                color: white
+                
+                position: absolute
+                right: 10%
+                bottom: 5%
+                left: 10%
+
+    .recommendation
+        padding: 32px 0
+
+        figure
+            +flexAlignItems (center)
+            
+            img
+                +order(2)
+                width: 24%
+                margin: auto
+
+            figcaption
+                +order(1)
+                width: 40%
+                font-size: 24px
+                line-height: 32px
+                margin-left: auto
+
+    .navigation
+        background-color: white
+        padding-top: 32px
+
+        a
+            padding-right: 32px
+            padding-bottom: 8px
+
+            span
+                color: #9c9c9c
+
+                &:before
+                    content: "("
+                
+                &:after
+                    content: ")"

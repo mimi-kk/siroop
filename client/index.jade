@@ -1,0 +1,55 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+
+        title Computer & Tablets
+        
+        link(rel="stylesheet", href="../styles/screen.css")
+        link(href="https://fonts.googleapis.com/css?family=Roboto:400,300", rel="stylesheet", type="text/css")
+        
+    body
+        main.teaser
+            section.cover
+                .row.auto-margin
+                    include ./components/navigation/current-navigation.jade
+
+                    h1 Computer & Tablets
+
+            section.top
+                .row.auto-margin
+                    include ./components/products/products.jade
+
+            section.category.navigation
+                .row.auto-margin
+                    h2.subtitle Unsere Kategorien im Bereich Computer & Tablets
+                        include ./components/navigation/subcategory-navigation.jade
+            
+            section.category
+                include ./components/navigation/teaser-navigation.jade
+
+                .row.auto-margin.flex
+                    figure
+                        img(src="https://cdn.siroop.ch/media/images/c/category_blue.png")
+                        figcaption iPad & Tablet
+
+                    include ./components/products/products.jade
+            
+            section.recommendation
+                .row.auto-margin
+                    figure.flex
+                        img(src="../images/siroop-become-merchant.png", sizes="50vw", srcset="../images/siroop-become-merchant-small.png 200w, ../images/siroop-become-merchant-medium.png.jpg 400w, ../images/siroop-become-merchant.png 600w", alt="Du vermisst deinen Lieblingshändler? Nenn uns deine Wünsche und wir geben unser Bestes, sie auf unsere Plattform aufzunehmen! Jetzt Händler vorschlagen.", title="Lokale Händler")
+
+                        figcaption <h2 class="subtitle">Lokalhändler</h2> Du vermisst deinen Lieblingshändler? Nenn uns deine Wünsche und wir geben unser Bestes, sie auf unsere Plattform aufzunehmen! Jetzt Händler vorschlagen.
+
+            section.category
+                .row.auto-margin.flex
+                    figure
+                        a(href="https://siroop.ch/computer-elektronik/computer-tablets/computer")
+                            img(alt="Computer", src="https://cdn.siroop.ch/media/images/c/category_red.png")
+                            figcaption Computer
+                    figure
+                        a(href="https://siroop.ch/computer-elektronik/computer-tablets/ebook-reader")
+                            img(alt="eBook Reader" src="https://cdn.siroop.ch/media/images/c/category_blue.png")
+                            figcaption eBook Reader

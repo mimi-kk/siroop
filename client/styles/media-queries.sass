@@ -1,0 +1,46 @@
+@import "mixins"
+
+@media only screen and (max-width: 768px)
+    .teaser
+        .row
+            padding: 0 16px
+
+        .cover
+            h1
+                font-size: 32px
+
+        .products
+            +flexWrap(wrap)
+
+            li
+                width: 48%
+                margin-bottom: 18px
+                background: white
+
+                img
+                    width: 84%
+
+        .recommendation
+            figure
+                figcaption
+                    font-size: 18px
+                    line-height: 24px
+
+        .category
+            .flex
+                +flexDirection(column)
+
+                figure
+                    width: 100%
+
+                    img
+                        width: 100%
+                        height: 240px
+            
+            .products
+                +flexDirection(row)
+                width: 100%
+
+        .navigation
+            a
+                display: block

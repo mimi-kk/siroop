@@ -1,0 +1,26 @@
+{
+  "name": "siroop",
+  "version": "1.0.0",
+  "description": "siroop",
+  "main": "index.js",
+  "dependencies": {
+    "browser-sync": "2.11.2",
+    "gulp": "3.9.1",
+    "gulp-jade": "1.1.0",
+    "gulp-sass": "2.2.0",
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mimi-kk/siroop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mimi-kk/siroop/issues"
+  },
+  "homepage": "https://github.com/mimi-kk/siroop#readme"
+}
